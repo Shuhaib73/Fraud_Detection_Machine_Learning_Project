@@ -1,4 +1,4 @@
-## Credit Card fraud detection system using Machine Learning
+# Credit Card fraud detection system using Machine Learning
 
 #### The objective of this project is to develop machine learning models that can effectively identify fraudulent credit card transactions. To achieve this, we will conduct an in-depth analysis of customer-level data. 
 
