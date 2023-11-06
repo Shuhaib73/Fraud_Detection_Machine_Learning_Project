@@ -10,6 +10,15 @@
 ## Model Building on Imbalanced Data
 ### When dealing with heavily imbalanced data, such as in this case where only 0.4% of the transactions are labeled as fraudulent (class 1) and 99.6% are non-fraudulent (class 0), it's important to select appropriate metrics for model evaluation.
 
+### The project pipeline can be summarized in the following steps: 
+#### Data Understanding and Exploration : This phase involves loading the data and Explore the characteristics of the available features. Understanding the data helps us select the relevant features for our final model.  
+#### Exploratory Data Analysis (EDA): Conduct in-depth exploratory data analysis, including univariate and bivariate analyses. Address data skewness if present, as it can impact model development.
+#### Data Preprocessing: Handle missing values, outliers, and any data cleansing tasks. Consider feature engineering or transformation to enhance model performance.
+#### Feature Selection and Engineering: Refine feature selection based on insights from EDA. Experiment with feature engineering techniques to improve model predictability.
+#### Model Building and Hyperparameter Tuning: Explore a variety of machine learning models and fine-tune hyperparameters. Consider using different sampling techniques to address class imbalance.
+#### Model Evaluation: Assess model performance using suitable metrics, emphasizing the accurate identification of fraudulent transactions. 
+#### Deployment: Deploy the finalized model, potentially as a web application using Streamlit or other suitable technology.
+
 ### Machine Learning Models used in the project:
 #### The project compares the results of different techniques :
 ##### - Decision Tree
