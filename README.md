@@ -13,11 +13,11 @@
 ## The project pipeline can be summarized in the following steps: 
 #### **Data Understanding and Exploration** : This phase involves loading the data and Explore the characteristics of the available features. Understanding the data helps us select the relevant features for our final model.  
 #### **Exploratory Data Analysis (EDA)**: Conduct in-depth exploratory data analysis, including univariate and bivariate analyses. Address data skewness if present, as it can impact model development.
-#### **Data Preprocessing**: Handle missing values, outliers, and any data cleansing tasks. Consider feature engineering or transformation to enhance model performance.
-#### **Feature Selection and Engineering**: Refine feature selection based on insights from EDA. Experiment with feature engineering techniques to improve model predictability.
-#### **Model Building and Hyperparameter Tuning**: Explore a variety of machine learning models and fine-tune hyperparameters. Consider using different sampling techniques to address class imbalance.
-#### **Model Evaluation**: Assess model performance using suitable metrics, emphasizing the accurate identification of fraudulent transactions. 
-### **Deployment**: Deploy the finalized model, potentially as a web application using Streamlit or other suitable technology.
+#### <strong>Data Preprocessing</strong>: Handle missing values, outliers, and any data cleansing tasks. Consider feature engineering or transformation to enhance model performance.
+#### <strong>Feature Selection and Engineering</strong>: Refine feature selection based on insights from EDA. Experiment with feature engineering techniques to improve model predictability.
+#### <strong>Model Building and Hyperparameter Tuning</strong>: Explore a variety of machine learning models and fine-tune hyperparameters. Consider using different sampling techniques to address class imbalance.
+#### <strong>Model Evaluation</strong>: Assess model performance using suitable metrics, emphasizing the accurate identification of fraudulent transactions. 
+### <strong>Deployment</strong>: Deploy the finalized model, potentially as a web application using Streamlit or other suitable technology.
 ### To deploy the fraud detection model, I have utilized Streamlit. You can access the web application by following this link: https://shuhaib73.streamlit.app/
 
 ### Machine Learning Models used in the project:
