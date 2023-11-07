@@ -18,8 +18,7 @@
 #### **Model Building and Hyperparameter Tuning**: Explore a variety of machine learning models and fine-tune hyperparameters. Consider using different sampling techniques to address class imbalance.
 #### **Model Evaluation**: Assess model performance using suitable metrics, emphasizing the accurate identification of fraudulent transactions. 
 ### **Deployment**: Deploy the finalized model, potentially as a web application using Streamlit or other suitable technology.
-## To deploy the fraud detection model, I have utilized Streamlit. 
-## You can access the web application by following this link: https://shuhaib73.streamlit.app/
+### To deploy the fraud detection model, I have utilized Streamlit. You can access the web application by following this link: https://shuhaib73.streamlit.app/
 
 ### Machine Learning Models used in the project:
 #### The project compares the results of different techniques :
