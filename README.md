@@ -1,7 +1,6 @@
 # **Credit Card fraud detection system using Machine Learning**
 
-<p>
-  <align="center">
+<p align="center">
     <img src="https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project/blob/main/hack-fraud-card-code.jpg" width="450" height="250" />
 </p>
 
