@@ -32,7 +32,7 @@
 ##### - XGB Boost
 
 ## **Conclusion** :
-#### After running different models on Oversampled data: The selection of the Random Forest classifier with Random Oversampling is well-founded due to its ability to achieve exceptional accuracy, strong precision and recall values, and a balanced trade-off between the two. It demonstrates proficiency in addressing the challenges posed by imbalanced data and holds promise for accurate fraud detection in real-world scenarios.
+``` After running different models on Oversampled data: The selection of the Random Forest classifier with Random Oversampling is well-founded due to its ability to achieve exceptional accuracy, strong precision and recall values, and a balanced trade-off between the two. It demonstrates proficiency in addressing the challenges posed by imbalanced data and holds promise for accurate fraud detection in real-world scenarios.```
 
 ### **The model's performance in classifying the data is quite promising:**
 #### 1. **AUC-ROC** (Area Under the Receiver Operating Characteristic Curve): With an AUC-ROC of 98.6, the model demonstrates an outstanding ability to distinguish between the positive and negative classes. It exhibits a high true positive rate while maintaining a low false positive rate
