@@ -12,7 +12,7 @@
 ``` The dataset comprises almost 1.3 million fully anonymized transactions, each clearly labeled as either fraudulent or non-fraudulent. It's important to note that the prevalence of fraudulent transactions in this dataset is remarkably low, accounting for just 0.4% of all transactions. This means that a simplistic system that labels every transaction as normal could achieve an accuracy exceeding 99.6%, even without detecting any fraudulent transactions. Consequently, we need to employ sophisticated adjustment techniques to address this class imbalance in the dataset.```
 
 ## **Model Building on Imbalanced Data**
-#### When dealing with heavily imbalanced data, such as in this case where only 0.4% of the transactions are labeled as fraudulent (class 1) and 99.6% are non-fraudulent (class 0), it's important to select appropriate metrics for model evaluation.
+``` When dealing with heavily imbalanced data, such as in this case where only 0.4% of the transactions are labeled as fraudulent (class 1) and 99.6% are non-fraudulent (class 0), it's important to select appropriate metrics for model evaluation.```
 
 ## The project pipeline can be summarized in the following steps: 
 #### **Data Understanding and Exploration** : This phase involves loading the data and Explore the characteristics of the available features. Understanding the data helps us select the relevant features for our final model.  
@@ -21,8 +21,8 @@
 #### <strong>Feature Selection and Engineering</strong>: Refine feature selection based on insights from EDA. Experiment with feature engineering techniques to improve model predictability.
 #### <strong>Model Building and Hyperparameter Tuning</strong>: Explore a variety of machine learning models and fine-tune hyperparameters. Consider using different sampling techniques to address class imbalance.
 #### <strong>Model Evaluation</strong>: Assess model performance using suitable metrics, emphasizing the accurate identification of fraudulent transactions. 
-### <strong>Deployment</strong>: Deploy the finalized model, potentially as a web application using Streamlit or other suitable technology.
-### To deploy the fraud detection model, I have utilized Streamlit. You can access the web application by following this link: https://shuhaib73.streamlit.app/
+``` <strong>Deployment</strong>: Deploy the finalized model, potentially as a web application using Streamlit or other suitable technology.```
+``` To deploy the fraud detection model, I have utilized Streamlit. You can access the web application by following this link: https://shuhaib73.streamlit.app/```
 
 ### Machine Learning Models used in the project:
 #### The project compares the results of different techniques :
