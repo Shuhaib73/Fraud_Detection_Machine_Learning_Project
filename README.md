@@ -9,10 +9,10 @@
 ## **Problem Statement**
 
 ### In this project, our primary objective is to develop an advanced fraud detection system for credit card transactions using machine learning techniques. 
-    ``` The dataset comprises almost 1.3 million fully anonymized transactions, each clearly labeled as either fraudulent or non-fraudulent. It's important to note that the prevalence of fraudulent transactions in this dataset is remarkably low, accounting for just 0.4% of all transactions. This means that a simplistic system that labels every transaction as normal could achieve an accuracy exceeding 99.6%, even without detecting any fraudulent transactions. Consequently, we need to employ sophisticated adjustment techniques to address this class imbalance in the dataset.```
+``` The dataset comprises almost 1.3 million fully anonymized transactions, each clearly labeled as either fraudulent or non-fraudulent. It's important to note that the prevalence of fraudulent transactions in this dataset is remarkably low, accounting for just 0.4% of all transactions. This means that a simplistic system that labels every transaction as normal could achieve an accuracy exceeding 99.6%, even without detecting any fraudulent transactions. Consequently, we need to employ sophisticated adjustment techniques to address this class imbalance in the dataset.```
 
 ## **Model Building on Imbalanced Data**
-``` When dealing with heavily imbalanced data, such as in this case where only 0.4% of the transactions are labeled as fraudulent (class 1) and 99.6% are non-fraudulent (class 0), it's important to select appropriate metrics for model evaluation.```
+    When dealing with heavily imbalanced data, such as in this case where only 0.4% of the transactions are labeled as fraudulent (class 1) and 99.6% are non-fraudulent (class 0), it's important to select appropriate metrics for model evaluation.
 
 ## The project pipeline can be summarized in the following steps: 
 #### **Data Understanding and Exploration** : 
