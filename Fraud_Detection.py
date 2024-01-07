@@ -51,12 +51,38 @@ def web_customes():
 
     return st.markdown(hide_st_style, unsafe_allow_html=True)
 
+# CSS styling for login page
+def set_custom_login_style():
+    
+    st.markdown(
+        """
+        <style>
+            .stApp {
+                color: white !important;
+            }
+            .stTextInput div div div {
+                color: white !important;
+                background-color: #FFFFFF !important;
+            }
+            .stTextInput div div input {
+                color: white !important;
+                background-color: #FFFFFF !important;
+            }
+            .stButton {
+                color: white !important;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
 
 def app() :
     
     st.set_page_config(page_title="Fraud Detection System", page_icon=":Info", layout="centered")
 
     get_background("robo.png") 
+    set_custom_login_style()
 
     # Function to get data from a CSV file (cached for efficiency)
     @st.cache_data
@@ -225,10 +251,10 @@ def app() :
 
             Style_css("Style_css.css")
 
-
+# Main function to run the app
 def main():
     app()
 
-
+# Run the main function if the script is executed directly
 if __name__ == '__main__':
     main()
