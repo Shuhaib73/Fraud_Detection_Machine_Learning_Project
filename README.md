@@ -1,4 +1,4 @@
-# **Credit Card fraud detection system using Machine Learning**
+## **Credit Card fraud detection system using Machine Learning**
 
 <p align="center">
     <img src="https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project/blob/main/hack-fraud-card-code.jpg" width="450" height="250" />
@@ -49,8 +49,8 @@
 ``` After running different models on Oversampled data: The selection of the Random Forest classifier with Random Oversampling is well-founded due to its ability to achieve exceptional accuracy, strong precision and recall values, and a balanced trade-off between the two. It demonstrates proficiency in addressing the challenges posed by imbalanced data and holds promise for accurate fraud detection in real-world scenarios.```
 
 ### **The model's performance in classifying the data is quite promising:**
-#### 1. **AUC-ROC** (Area Under the Receiver Operating Characteristic Curve): With an AUC-ROC of 98.6, the model demonstrates an outstanding ability to distinguish between the positive and negative classes. It exhibits a high true positive rate while maintaining a low false positive rate
-#### 2. **AUC-PR** (Area Under the Precision-Recall Curve): The AUC-PR score of 88.44 signifies that the model achieves a favorable balance between precision and recall, particularly for the positive class. It demonstrates a capacity to make accurate positive predictions while minimizing the risk of missing positive cases.
+#### 1. **AUC-ROC** (Area Under the Receiver Operating Characteristic Curve): With an AUC-ROC of 99.23%, the model demonstrates an outstanding ability to distinguish between the positive and negative classes. It exhibits a high true positive rate while maintaining a low false positive rate
+#### 2. **AUC-PR** (Area Under the Precision-Recall Curve): The AUC-PR score of 94% signifies that the model achieves a favorable balance between precision and recall, particularly for the positive class. It demonstrates a capacity to make accurate positive predictions while minimizing the risk of missing positive cases.
 #### 3. Accuracy Score on Testing Data is 99%
 
 #### *In summary, the developed model demonstrates robust classification performance by adeptly distinguishing between classes and achieving a harmonious balance between precision and recall. The successful outcome underscores the model's efficacy in accurately categorizing instances, validating its potential as a reliable tool for the intended purpose. The culmination of meticulous data analysis, feature engineering, and model tuning has resulted in a solution that meets the project's objectives and holds promise for practical applications.*
