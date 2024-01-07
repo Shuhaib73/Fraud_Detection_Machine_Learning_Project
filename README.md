@@ -4,7 +4,7 @@
     <img src="https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project/blob/main/hack-fraud-card-code.jpg" width="450" height="250" />
 </p>
 
-### **You can access the web application by following this link: https://shuhaib73.streamlit.app/**
+### **You can access the web application by following this link: https://frauddetectionsystem.streamlit.app/**
 #### The objective of this project is to develop machine learning models that can effectively identify fraudulent credit card transactions. To achieve this, we will conduct an in-depth analysis of customer-level data. 
 
 ## **Problem Statement**
@@ -36,7 +36,7 @@
 
 #### <strong>Deployment</strong>: Deployed the finalized model as a web application using Streamlit Python framework.
 ``` To deploy the fraud detection model, I have utilized Streamlit.``` 
-**You can access the web application by following this link:** https://shuhaib73.streamlit.app/
+**You can access the web application by following this link:** https://frauddetectionsystem.streamlit.app/
 
 ### Machine Learning Models used in the project:
 #### The project compares the results of different techniques :
@@ -51,6 +51,6 @@
 ### **The model's performance in classifying the data is quite promising:**
 #### 1. **AUC-ROC** (Area Under the Receiver Operating Characteristic Curve): With an AUC-ROC of 99.23%, the model demonstrates an outstanding ability to distinguish between the positive and negative classes. It exhibits a high true positive rate while maintaining a low false positive rate
 #### 2. **AUC-PR** (Area Under the Precision-Recall Curve): The AUC-PR score of 94% signifies that the model achieves a favorable balance between precision and recall, particularly for the positive class. It demonstrates a capacity to make accurate positive predictions while minimizing the risk of missing positive cases.
-#### 3. Accuracy Score on Testing Data is 99%
+#### 3. Accuracy Score on Testing & Training set is 100%
 
 #### *In summary, the developed model demonstrates robust classification performance by adeptly distinguishing between classes and achieving a harmonious balance between precision and recall. The successful outcome underscores the model's efficacy in accurately categorizing instances, validating its potential as a reliable tool for the intended purpose. The culmination of meticulous data analysis, feature engineering, and model tuning has resulted in a solution that meets the project's objectives and holds promise for practical applications.*
