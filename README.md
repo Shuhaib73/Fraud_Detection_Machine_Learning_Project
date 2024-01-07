@@ -3,6 +3,7 @@
 <p align="center">
     <img src="https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project/blob/main/hack-fraud-card-code.jpg" width="450" height="250" />
 </p>
+
 ### **You can access the web application by following this link: https://shuhaib73.streamlit.app/**
 #### The objective of this project is to develop machine learning models that can effectively identify fraudulent credit card transactions. To achieve this, we will conduct an in-depth analysis of customer-level data. 
 
