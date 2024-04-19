@@ -1,8 +1,10 @@
 
 from flask import Flask, render_template, request, flash, redirect, url_for, get_flashed_messages
 
-from model import *
-from model import PipelineTester
+import pickle
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from imblearn.over_sampling import SMOTE
 import pandas as pd
 import numpy as np
 
@@ -51,11 +53,43 @@ def dashboard():
         
 
         try:
-            # Initialize the PipelineTester with the trained pipeline and input data
-            model_pipe = PipelineTester('binary_pipeline1.pkl', input_data)
+            # Load the trained RandomForest model
+            with open('Model1.pkl', 'rb') as f:
+                rf_model = pickle.load(f)
 
-            # Predict the class label for the input data
-            prediction_prob = model_pipe.predict()
+            # Custom transformer class for integrating SMOTE with scikit-learn pipelines.
+            class SMOTETransformer:
+                def __init__(self, random_state=None):
+                    self.random_state = random_state
+                    self.smote = SMOTE(random_state=random_state)
+            
+                def fit_resample(self, X, y):
+                    return self.smote.fit_resample(X, y)
+
+            # Define numerical and categorical features
+            numerical_features = ['amt', 'lat', 'long', 'city_pop', 'Year', 'Hour', 'Day', 'Month', 'Age']
+            
+            categorical_features = ['category', 'gender', 'job']
+
+            # Define preprocessing transformers
+            numerical_transformer = StandardScaler()
+            categorical_transformer = OneHotEncoder()
+            
+            # Combine preprocessing steps manually
+            preprocessor = ColumnTransformer(
+                transformers=[
+                    ('num', numerical_transformer, numerical_features),
+                    ('cat', categorical_transformer, categorical_features)
+                ])
+            
+            # Initialize SMOTETransformer
+            smote_transformer = SMOTETransformer()
+
+            # Preprocess the user input data
+            user_preprocessed = preprocessor.transform(input_data)
+            
+            # Make prediction
+            prediction_prob = rf_model.predict_proba(user_preprocessed)
 
             # Set a threshold for classification
             threshold = 0.5
