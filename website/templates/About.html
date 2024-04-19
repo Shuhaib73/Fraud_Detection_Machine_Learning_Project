@@ -1,0 +1,65 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static', filename='about_styles.css')}}">
+{% endblock %}
+
+{% block str_btn %}
+{% endblock %}
+
+
+{% block content %}
+    <div class="container_prj">
+        <h2>Utilizing Machine Learning for Enhanced Credit Card Fraud Detection</h2><br>
+
+        <h3 style="padding-top: 15px;">Navigating Challenges in Credit Card Fraud Detection: A Comprehensive Overview:</h3>
+        <p>Credit card fraud presents a persistent challenge in the era of advanced technology and interconnected global communication networks. With billions of dollars lost annually, both consumers and financial institutions grapple with the escalating threat posed by fraudulent activities. Consequently, the implementation of robust fraud detection systems has become imperative for banks and financial entities to mitigate their losses effectively.</p>
+        
+        <h4>Outlined below are some of the key challenges encountered in the realm of credit card fraud detection:</h4>
+
+        <ul>
+            <li><strong></strong></li>
+            <li><strong>Non-availability of Real Datasets:
+            </strong> A significant hurdle in credit card fraud detection is the scarcity of authentic datasets for research purposes. Despite the considerable interest in this field, obtaining access to real-world transaction data remains elusive. Financial institutions are understandably reluctant to disclose sensitive customer information due to privacy concerns.</li>
+            <li><strong>Imbalanced Datasets: </strong> Credit card fraud datasets are characterized by severe class imbalance, with the majority of transactions being legitimate and only a small fraction identified as fraudulent. In real-world scenarios, legitimate transactions often outnumber fraudulent ones by a substantial margin, typically with a ratio of 98% to 2%.</li>
+            <li><strong>Data Volume: </strong> The sheer volume of credit card transactions processed daily poses a formidable challenge for fraud detection systems. Analyzing such vast datasets demands sophisticated techniques that can scale effectively while also requiring substantial computational resources.</li>
+            <li><strong>Determination of Evaluation Parameters:</strong>  Establishing appropriate evaluation metrics is crucial for assessing the efficacy of fraud detection models. Choosing the right parameters and metrics to measure performance accuracy, precision, recall, and F1-score is essential for ensuring the effectiveness of the detection system.</li>
+        </ul><br/>
+
+
+        <h4>Objective</h4>
+        <p>The objective of this project is to develop robust machine learning model tailored to identify fraudulent credit card transactions effectively.</p>
+
+        <h4>Features</h4>
+        <p>The dataset comprises almost 1.3 million transactions, each clearly labeled as either fraudulent or non-fraudulent. It's important to note that the prevalence of fraudulent transactions in this dataset is remarkably low, accounting for just 0.4% of all transactions. This means that a simplistic system that labels every transaction as normal could achieve an accuracy exceeding 99.6%, even without detecting any fraudulent transactions. Consequently, we need to employ sophisticated adjustment techniques to address this class imbalance in the dataset.</p>
+
+        <h4>Model Building on Imbalanced Data
+        </h4>
+        <p>When dealing with heavily imbalanced data, such as in this case where only 0.4% of the transactions are labeled as fraudulent (class 1) and 99.6% are non-fraudulent (class 0), it's important to select appropriate metrics for model evaluation.</p>
+
+        <h4 style="padding-top: 15px;">Machine Learning Model Development:</h4>
+        
+        <ul>
+            <li><strong>Data Understanding and Exploration :</strong> In the initial phase of our project, we focus on understanding and exploring the dataset. This involves loading the data and delving into the characteristics of the available features. By performing exploratory data analysis (EDA), we gain insights into the distribution of variables, identify potential patterns, and understand the relationships between different features. This understanding guides us in selecting relevant features for our final model, laying the foundation for subsequent phases.</li>
+            <li><strong>Exploratory Data Analysis (EDA):
+            </strong> Conducting an in-depth EDA is the next step, involving both univariate and bivariate analyses. This process provides valuable insights into the dataset, allowing us to address data skewness and make informed decisions that will impact the model development stage.</li>
+            <li><strong>Data Preprocessing: </strong> The data preprocessing phase is crucial for ensuring the quality and reliability of our model. We address missing values, handle outliers, and perform any necessary data cleansing tasks. This step contributes to the overall data integrity and prepares the dataset for model training. Additionally, we consider feature engineering and transformations to enhance the model's performance by creating new meaningful features or transforming existing ones.</li>
+            <li><strong>Feature Selection and Engineering:</strong> Building on insights gained from EDA, we refine our feature selection strategy to focus on the most influential variables. Feature engineering techniques are explored to further improve the predictability of our model. This phase aims to enhance the model's ability to capture relevant patterns in the data, contributing to better overall performance.</li>
+            <li><strong>Mutual Information Scores for Feature Importance Analysis:</strong> Calculated mutual information scores to analyze the importance of features in predicting the target variable.</li>
+            <li><strong>Model Selection:</strong> Explored different machine learning algorithms suitable for the task such as logistic regression, decision trees, random forests, XGB, KNN and Gradient Boosting.</li>
+            <li><strong>Model Training:</strong> Trained multiple models using the training data and evaluated their performance using appropriate metrics.</li>
+            <li><strong>Hyperparameter Tuning:</strong> Fine-tuned the hyperparameters of the best-performing models using techniques like grid search or randomized search.</li>
+            <li><strong>Model Evaluation:</strong> Evaluated the final model on the testing data to assess its generalization performance and identify any potential issues like overfitting or underfitting.</li>
+            <li><strong>Model Deployment:</strong> Deployed the trained model into production environment for real-time predictions.</li>
+            <li><strong></strong></li>
+        </ul><br/><br/>
+
+        {% block description %}
+        {% endblock %}
+        
+    </div>
+{% endblock %}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="shuhaib">
+
+        <title>{% block title %}Home{% endblock %}</title>
+        
+        {% block styles %}
+        <link rel="stylesheet" href="{{url_for('static', filename='base_styles.css')}}">
+        {% endblock %}
+
+        <link rel="icon" href="static/images/logo.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/55d7ca6d4f.js" crossorigin="anonymous"></script>
+    </head>
+
+    {% block body %}
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">FDS</a></div>
+                <ul class="links">
+                    {% block links %}
+                    <li><a class="menu_i" href="{{url_for('home')}}">Home</a></li>
+                    <li><a class="menu_i" href="{{url_for('about')}}">About</a></li>
+                    <li><a class="menu_i" href="https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project", target="_blank">Git Hub</a></li>
+                    <li><a class="menu_i" href="{{url_for('contact')}}">Contact</a></li>
+                    {% endblock %}
+                </ul>
+                {% block str_btn %}
+                <a href="{{url_for('dashboard')}}" class="action_btn">Get Started</a>
+                {% endblock %}
+            </div>
+            
+            {% block content %}
+            {% endblock %}
+
+        </header>
+
+        {% block description %}
+        <div class="description_1">
+            <h3>A Machine Learning Approach -</h3>
+            <p>Detecting Fraudulent Transactions.</p><br><br><br>
+
+            <a class="get_btn" href="{{url_for('dashboard')}}">
+                Get Started
+            </a>
+        </div>
+
+        {% endblock %}
+
+
+    </body>
+    {% endblock %}
+
+    
+</html>

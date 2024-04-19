@@ -1,0 +1,201 @@
+
+body{
+    display: flex;
+    height: 100vh;
+    background-image: url('./images/bg_an3.gif');
+    background-color: #000;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    text-align: center; /* Center align the form */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_head {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    color: #ffffff;
+}
+
+.input-box {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between input fields */
+    padding-bottom: 2.5%;
+    padding-right: 3px;
+}
+
+.input-items {
+    display: flex;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-left: 3px solid #ffffff;
+    border-radius: 8px;
+    width: 250px;
+    height: 40px;
+    padding-bottom: 5px;
+    color: #fff;
+
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 5px 5px 5px rgba(35, 45, 45, 0.991);
+    padding-left: 4px;
+
+    animation: anime_input_box 5s infinite ease-in-out;
+}
+
+@keyframes anime_input_box {
+    0% {
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.733);
+    }
+    20% {
+        box-shadow: 5px 5px 5px rgba(241, 255, 245, 0.564);
+    }
+    40% {
+        box-shadow: 5px 5px 5px rgba(131, 134, 134, 0.758);
+    }
+    60% {
+        box-shadow: 5px 5px 5px rgba(129, 133, 130, 0.564);
+    }
+    80% {
+        box-shadow: 5px 5px 5px rgba(128, 125, 125, 0.991);
+    }
+    100% {
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.564);
+    }
+}
+
+.input-items:hover {
+    border-left: none;
+    border-right: 3px solid rgb(255, 255, 255);
+}
+
+.icon{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0;
+}
+
+.container h2 {
+    padding-top: 5px;
+    padding-bottom: 35px;
+    color: rgb(59, 57, 57);
+}
+
+.predict_btn {
+    width: 100px;
+    height: 40px;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 16px;
+
+    margin: auto;
+
+    border: none;
+    background-color: transparent;
+    border-left: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.form-inline .predict_btn:hover {
+    background-color: rgb(56, 255, 102);
+    color: white;
+    box-shadow: 5px 8px 20px rgb(56, 255, 102);
+}
+
+
+.form-inline .predict_btn{
+    color: #8b8a89;
+    text-align: center;
+    position: relative;
+    font-weight: 800;
+}
+
+/* Alert */
+
+.error-message {
+    margin-left: 38%;
+    margin-top: 5%;
+    display: flex;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    
+    bottom: 1px;
+    height: 40px;
+    width: 300px;
+
+    background-color: rgb(255, 0, 0, 0.3);
+    color: rgb(11, 10, 10);
+    font-weight: 700;
+    border: 1px solid red;
+    border-radius: 10px;
+    /* padding: 1px 3px; */
+
+    animation: fadeout 8s forwards;
+}
+
+.success_message {
+    margin-left: 38%;
+    margin-top: 5%;
+    display: flex;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    
+    bottom: auto;
+    height: 40px;
+    width: 300px;
+
+    background-color: rgba(20, 255, 118, 0.861);
+    color: rgb(11, 10, 10);
+    font-weight: 700;
+    border: 1px solid rgb(37, 255, 106);
+    border-radius: 10px;
+    /* padding: 1px 3px; */
+
+    animation: fadeout 6s forwards;
+
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+    
+}
+
+.navigation_bar a {
+    position: relative;
+    font-size: 1.1em;
+    color: #162938;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 40px;
+}
+

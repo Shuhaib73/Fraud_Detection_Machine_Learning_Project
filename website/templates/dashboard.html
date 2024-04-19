@@ -1,0 +1,95 @@
+
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block styles %}    
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static', filename='dashboard_styles.css')}}">
+{% endblock %}
+
+{% block str_btn %}
+{% endblock %}
+
+{% block content %}
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <div class="error-messages">
+            {% for category, message in messages %}
+                {% if category == 'error' %}
+                    <div class="error-message">
+                        {{ message }}
+                    </div>
+                {% elif category == 'success' %}
+                    <div class="success_message">
+                        {{ message }}
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}
+    {% endwith %}
+
+    <h2 class="form_head">Transaction Details</h2>
+    <div class="container">
+        
+        <form action="{{url_for('dashboard')}}" method="POST" class="form-inline">
+            <div class="input-box">
+                <label class="for_labels" for="category"></label>
+                <input type="text" class="input-items" id="category" name="category" placeholder="Category" required>
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="gender"></label>
+                <input type="text" id="gender" class="input-items" name="gender" placeholder="Gender" required>
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="Age"></label>
+                <input type="number" id="Age" class="input-items" name="Age" placeholder="Age" required step="any">
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="job"></label>
+                <input type="text" id="job" class="input-items" name="job" placeholder="Job" required>
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="amt"></label>
+                <input type="number" id="amt" class="input-items" name="amt" placeholder="Amount" required step="any">
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="Year"></label>
+                <input type="number" id="Year" class="input-items" name="Year" placeholder="Year" required step="any">
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="lat"></label>
+                <input type="number" id="lat" class="input-items" name="lat" placeholder="Latitude" required step="any">
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="long"></label>
+                <input type="number" id="long" class="input-items" name="long" placeholder="Longitude" required step="any">
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="city_pop"></label>
+                <input type="number" id="city_pop" class="input-items" name="city_pop" placeholder="City Population" required step="any">
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="Month"></label>
+                <input type="number" id="Month" class="input-items" name="Month" placeholder="Month" required step="any">
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="Day"></label>
+                <input type="number" id="Day" class="input-items" name="Day" placeholder="Day" required step="any" >
+            </div>
+            <div class="input-box">
+                <label class="for_labels" for="number"></label>
+                <input type="number" id="Hour" class="input-items" name="Hour" placeholder="Hour" required step="any">
+            </div>
+
+            
+            <button type="submit" class="predict_btn">Predict</button>
+        </form>
+    </div>
+
+    {% block description %}
+    {% endblock %}
+
+{% endblock %}
