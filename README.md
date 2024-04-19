@@ -1,7 +1,7 @@
 ## **Credit Card fraud detection system using Machine Learning**
 
 <p align="center">
-    <img src="https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project/blob/main/hack-fraud-card-code.jpg" width="450" height="250" />
+    <img src="https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project/blob/project_branch/hack-fraud-card-code.jpg" width="450" height="250" />
 </p>
 
 ### **You can access the web application by following this link: https://frauddetectionsystem.streamlit.app/**
