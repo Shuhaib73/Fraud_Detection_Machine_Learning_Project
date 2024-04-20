@@ -11,14 +11,14 @@
         
 <h4>Outlined below are some of the key challenges encountered in the realm of credit card fraud detection:</h4>
 
-        <ul>
-            <li><strong></strong></li>
-            <li><strong>Non-availability of Real Datasets:
-            </strong> A significant hurdle in credit card fraud detection is the scarcity of authentic datasets for research purposes. Despite the considerable interest in this field, obtaining access to real-world transaction data remains elusive. Financial institutions are understandably reluctant to disclose sensitive customer information due to privacy concerns.</li>
-            <li><strong>Imbalanced Datasets: </strong> Credit card fraud datasets are characterized by severe class imbalance, with the majority of transactions being legitimate and only a small fraction identified as fraudulent. In real-world scenarios, legitimate transactions often outnumber fraudulent ones by a substantial margin, typically with a ratio of 98% to 2%.</li>
-            <li><strong>Data Volume: </strong> The sheer volume of credit card transactions processed daily poses a formidable challenge for fraud detection systems. Analyzing such vast datasets demands sophisticated techniques that can scale effectively while also requiring substantial computational resources.</li>
-            <li><strong>Determination of Evaluation Parameters:</strong>  Establishing appropriate evaluation metrics is crucial for assessing the efficacy of fraud detection models. Choosing the right parameters and metrics to measure performance accuracy, precision, recall, and F1-score is essential for ensuring the effectiveness of the detection system.</li>
-        </ul><br/>
+<ul>
+    <li><strong></strong></li>
+    <li><strong>Non-availability of Real Datasets:
+    </strong> A significant hurdle in credit card fraud detection is the scarcity of authentic datasets for research purposes. Despite the considerable interest in this field, obtaining access to real-world transaction data remains elusive. Financial institutions are understandably reluctant to disclose sensitive customer information due to privacy concerns.</li>
+    <li><strong>Imbalanced Datasets: </strong> Credit card fraud datasets are characterized by severe class imbalance, with the majority of transactions being legitimate and only a small fraction identified as fraudulent. In real-world scenarios, legitimate transactions often outnumber fraudulent ones by a substantial margin, typically with a ratio of 98% to 2%.</li>
+    <li><strong>Data Volume: </strong> The sheer volume of credit card transactions processed daily poses a formidable challenge for fraud detection systems. Analyzing such vast datasets demands sophisticated techniques that can scale effectively while also requiring substantial computational resources.</li>
+    <li><strong>Determination of Evaluation Parameters:</strong>  Establishing appropriate evaluation metrics is crucial for assessing the efficacy of fraud detection models. Choosing the right parameters and metrics to measure performance accuracy, precision, recall, and F1-score is essential for ensuring the effectiveness of the detection system.</li>
+</ul><br/>
 
 
 ## **Problem Statement**
