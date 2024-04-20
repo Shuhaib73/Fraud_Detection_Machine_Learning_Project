@@ -4,8 +4,22 @@
     <img src="https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project/blob/project_branch/hack-fraud-card-code.jpg" width="450" height="250" />
 </p>
 
-### **You can access the web application by following this link: https://frauddetectionsystem.streamlit.app/**
 #### The objective of this project is to develop machine learning models that can effectively identify fraudulent credit card transactions. To achieve this, we will conduct an in-depth analysis of customer-level data. 
+
+<h3 style="padding-top: 15px;">Navigating Challenges in Credit Card Fraud Detection: A Comprehensive Overview:</h3>
+        <p>Credit card fraud presents a persistent challenge in the era of advanced technology and interconnected global communication networks. With billions of dollars lost annually, both consumers and financial institutions grapple with the escalating threat posed by fraudulent activities. Consequently, the implementation of robust fraud detection systems has become imperative for banks and financial entities to mitigate their losses effectively.</p>
+        
+<h4>Outlined below are some of the key challenges encountered in the realm of credit card fraud detection:</h4>
+
+        <ul>
+            <li><strong></strong></li>
+            <li><strong>Non-availability of Real Datasets:
+            </strong> A significant hurdle in credit card fraud detection is the scarcity of authentic datasets for research purposes. Despite the considerable interest in this field, obtaining access to real-world transaction data remains elusive. Financial institutions are understandably reluctant to disclose sensitive customer information due to privacy concerns.</li>
+            <li><strong>Imbalanced Datasets: </strong> Credit card fraud datasets are characterized by severe class imbalance, with the majority of transactions being legitimate and only a small fraction identified as fraudulent. In real-world scenarios, legitimate transactions often outnumber fraudulent ones by a substantial margin, typically with a ratio of 98% to 2%.</li>
+            <li><strong>Data Volume: </strong> The sheer volume of credit card transactions processed daily poses a formidable challenge for fraud detection systems. Analyzing such vast datasets demands sophisticated techniques that can scale effectively while also requiring substantial computational resources.</li>
+            <li><strong>Determination of Evaluation Parameters:</strong>  Establishing appropriate evaluation metrics is crucial for assessing the efficacy of fraud detection models. Choosing the right parameters and metrics to measure performance accuracy, precision, recall, and F1-score is essential for ensuring the effectiveness of the detection system.</li>
+        </ul><br/>
+
 
 ## **Problem Statement**
 
