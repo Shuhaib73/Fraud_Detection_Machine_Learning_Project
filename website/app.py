@@ -5,6 +5,8 @@ from model import *
 from model import PipelineTester
 import pandas as pd
 import numpy as np
+import pickle 
+import joblib 
 
 
 app = Flask(__name__)
@@ -52,7 +54,7 @@ def dashboard():
 
         try:
             # Initialize the PipelineTester with the trained pipeline and input data
-            model_pipe = PipelineTester('binary_pipeline1.pkl', input_data)
+            model_pipe = PipelineTester('binary_pipeline2.joblib', input_data)
 
             # Predict the class label for the input data
             prediction_prob = model_pipe.predict()
