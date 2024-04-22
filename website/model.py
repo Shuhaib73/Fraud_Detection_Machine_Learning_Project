@@ -13,7 +13,6 @@ from sklearn.feature_selection import SelectKBest
 from imblearn.over_sampling import SMOTE
 
 import pickle
-import joblib
 from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.base import TransformerMixin
@@ -47,7 +46,7 @@ class PipelineTester:
 
   def predict(self):
     with open(self.pipeline_path, 'rb') as file:
-        loaded_pipeline = joblib.load(file)
+        loaded_pipeline = pickle.load(file)
 
         # Get the probability scores for each class
         probability_scores = loaded_pipeline.predict_proba(self.test_data)
