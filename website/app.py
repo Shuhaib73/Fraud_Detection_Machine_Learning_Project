@@ -54,7 +54,7 @@ def dashboard():
 
         try:
             # Initialize the PipelineTester with the trained pipeline and input data
-            model_pipe = PipelineTester('https://github.com/Shuhaib73/Fraud_Detection_Machine_Learning_Project/blob/82e6c194d9a8a75760ecca0159ffe7d4e8728e53/website/binary_pipeline2.joblib', input_data)
+            model_pipe = PipelineTester('binary_pipeline2.joblib', input_data)
 
             # Predict the class label for the input data
             prediction_prob = model_pipe.predict()
