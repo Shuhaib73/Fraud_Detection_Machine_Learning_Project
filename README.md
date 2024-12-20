@@ -47,9 +47,8 @@
 #### <strong>Model Evaluation</strong>: 
 ```Assessing the model's performance is critical. I have used appropriate metrics, emphasizing the accurate identification of fraudulent transactions. Rigorous evaluation ensures that the model meets the project objectives and provides reliable results.``` 
 
-#### <strong>Deployment</strong>: Deployed the finalized model as a web application using Streamlit Python framework.
-``` To deploy the fraud detection model, I have utilized Streamlit.``` 
-**You can access the web application by following this link:** https://frauddetectionsystem.streamlit.app/
+#### <strong>Deployment</strong>: Deployed the finalized model as a web application using Flask backend framework.
+``` To deploy the fraud detection model, I have utilized Flask.```
 
 ### Machine Learning Models used in the project:
 #### The project compares the results of different techniques :
